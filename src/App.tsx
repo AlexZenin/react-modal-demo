@@ -5,5 +5,5 @@ const H1 = styled.h1`
 `
 
 export function App() {
-  return <H1>Hello world!</H1>;
+  return <H1>Hello world</H1>
 }
