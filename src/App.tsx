@@ -1,9 +1,16 @@
-import styled from 'styled-components'
-
-const H1 = styled.h1`
-  background-color: papayawhip;
-`
+import { ModalContainer } from './modal/ModalContainer'
+import DeeplyNestedComponent from './components/DeeplyNestedComponent'
+import DeeplyNestedComponentNeedingContext from './components/DeeplyNestedComponentNeedingContext'
+import { ThemeProvider } from './themeContext'
 
 export function App() {
-  return <H1>Hello world</H1>
+  return (
+    <main>
+      <ModalContainer />
+      <DeeplyNestedComponent />
+      <ThemeProvider>
+        <DeeplyNestedComponentNeedingContext />
+      </ThemeProvider>
+    </main>
+  )
 }
