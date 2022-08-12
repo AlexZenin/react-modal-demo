@@ -1,0 +1,5 @@
+@mixin text-basic($size, $line-height, $spacing: 0em) {
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $spacing;
+}

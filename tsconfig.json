@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "lib": ["es5", "es2020", "es2016", "dom", "esnext"],
+    "types": ["node"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "baseUrl": "src",
+    "outDir": "dist",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es6"
+  },
+  "include": ["src/components", "custom.d.ts"],
+  "exclude": ["**/*.stories.ts", "**/*.stories.tsx"]
+}

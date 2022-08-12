@@ -1,16 +1,15 @@
-import { ModalContainer } from './modal/ModalContainer'
-import DeeplyNestedComponent from './components/DeeplyNestedComponent'
-import DeeplyNestedComponentNeedingContext from './components/DeeplyNestedComponentNeedingContext'
-import { ThemeProvider } from './themeContext'
+import React from 'react'
+import Button from './components/Button/Button'
 
 export function App() {
   return (
     <main>
-      <ModalContainer />
-      <DeeplyNestedComponent />
-      <ThemeProvider>
-        <DeeplyNestedComponentNeedingContext />
-      </ThemeProvider>
+      <Button size="sm" onClick={() => alert('hello')} variant={'solid'}>
+        <h2>Hello</h2>
+      </Button>
+      <Button size="sm" onClick={() => alert('hello')} variant={'text'}>
+        <h2>Hello</h2>
+      </Button>
     </main>
   )
 }
