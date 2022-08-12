@@ -1,4 +1,3 @@
-import React from 'react'
 import './button.scss'
 
 type Size = 'lg' | 'md' | 'sm' | 'xs'
