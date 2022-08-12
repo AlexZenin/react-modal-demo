@@ -1,17 +1,22 @@
-import React from 'react';
-import Tile from '../../Tile';
-import defaultIcon from './berry.svg';
-import activeIcon from './berryActive.svg';
+import React from 'react'
+import Tile from '../../Tile'
+import DefaultIcon from 'url:./berry.svg'
+import ActiveIcon from 'url:./berryActive.svg'
 
 type BerryTileProps = {
-  selected: boolean;
-  onSelected: () => void;
-};
+  selected: boolean
+  onSelected: () => void
+}
 
 const BerryTile: React.FC<BerryTileProps> = (props) => {
   return (
-    <Tile defaultIconPath={defaultIcon} activeIconPath={activeIcon} label="Berry" {...props} />
-  );
-};
+    <Tile
+      defaultIconPath={DefaultIcon}
+      activeIconPath={ActiveIcon}
+      label="Berry"
+      {...props}
+    />
+  )
+}
 
-export default BerryTile;
+export default BerryTile
